@@ -5,7 +5,7 @@ package com.xuyi.leetcode;
  */
 public class No4MedianofTwoSortedArrays {
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
         if (nums1 == null)
             return getMedian(nums2);
@@ -18,7 +18,7 @@ public class No4MedianofTwoSortedArrays {
                         findMedianSortedArraysImp(nums1, 0, nums1.length-1, nums2, 0, nums2.length-1, total/2+1))/2);
     }
 
-    public double findMedianSortedArraysImp(int[] num1, int start1, int end1, int[] num2, int start2, int end2, int k){
+    public static double findMedianSortedArraysImp(int[] num1, int start1, int end1, int[] num2, int start2, int end2, int k){
         int len1 = end1 - start1 + 1;
         int len2 = end2 - start2 + 1;
         if (len1 > len2)
@@ -38,7 +38,7 @@ public class No4MedianofTwoSortedArrays {
     }
 
 
-    public double getMedian(int[] num){
+    public static double getMedian(int[] num){
         if (num == null)
             return 0;
         return (num.length & 0x1) == 1 ? num[num.length/2] : (num[num.length/2-1] + num[num.length/2])/2.0;
