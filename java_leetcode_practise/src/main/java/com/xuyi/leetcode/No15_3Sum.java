@@ -22,9 +22,9 @@ import java.util.List;
 
 如果三个数的sum大于0，说明需要减小，所以第三个数往左移。
      */
-public class No153Sum {
+public class No15_3Sum {
 
-    public   List<List<Integer>> threeSum(int[] nums) {
+    public static   List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         if (nums == null || nums.length < 3){
             return ans;
@@ -53,7 +53,7 @@ public class No153Sum {
 
     }
 
-    public     List<List<Integer>> twoSum(int[] nums, int index, int goal){
+    public static     List<List<Integer>> twoSum(int[] nums, int index, int goal){
         List<List<Integer>> ans = new ArrayList<List<Integer>>();
         HashMap<Integer,Integer> hashMap = new HashMap<Integer, Integer>();
         for (int i=index+1; i<nums.length; i++){
