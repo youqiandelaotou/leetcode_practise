@@ -5,11 +5,11 @@ import org.junit.Test;
 /**
  * Created by xuyi7 on 2016/6/24.
  */
-public class No153SumTest {
+public class No15_3SumTest {
 
     @Test
     public void threeSumTest(){
         int[] nums = new int[]{0,0,0};
-        No153Sum.threeSum(nums);
+        No15_3Sum.threeSum(nums);
     }
 }
